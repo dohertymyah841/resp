@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Terms and conditions</title>
+  <title>Omega - Landing Page Template</title>
   <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
@@ -29,9 +29,9 @@
     <div class="load-circle"><span class="one"></span></div>
   </div>
   <div class="site-wrapper overflow-hidden ">
-    <div class="terms-page">
+    <div class="contact-page">
       <!-- Header Area -->
-      <header class="site-header header-1">
+      <header class="site-header header-1absolute-header">
         <div class="container-fluid pr-lg--30 pl-lg--30">
           <nav class="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
             <!-- Brand Logo-->
@@ -296,51 +296,72 @@
           </nav>
         </div>
       </header>
-      <main class="terms-page-main pt--30 pb--30 pt-md--110 pb-md--105">
+      <div class="inner-hero-area bg-gradient">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-9 col-xl-8">
-              <div class="omga-terms-contents">
-                <h1 class="title-main text-center mb--30 mb-lg--55">Terms & Conditions</h1>
-                <h2>Introduction</h2>
-  <p>activewear LTD (hereinafter referred to as "activewear," "we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, share, and protect your personal data when you use our website at <a href="https://activeketo.com/">activeketo.com</a> (hereinafter referred to as the "Website"). By using our Website, you consent to the practices described in this Privacy Policy.</p>
-
-  <h2>Type of Website</h2>
-  <p>Our Website is an affiliate website that promotes keto products and provides a platform for users to purchase these products.</p>
-
-  <h2>Type of Data Collection</h2>
-  <p>We may collect personal data from you when you use our Website, such as your name, email address, shipping address, and payment information. We may also collect non-personal data, such as your IP address and browser type.</p>
-
-  <h2>Use of Data</h2>
-  <p>We may use your personal data to fulfill your orders, to communicate with you about your orders and our products, to improve our Website, and to comply with legal obligations.</p>
-
-  <h2>Third-Party Processing</h2>
-  <p>We do not allow third-party access to our Website for processing data. However, we do use third-party payment processors to process your payments.</p>
-
-  <h2>Location</h2>
-  <p>Our Website is located in the United States of America.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>Our Website is not directed at children under the age of 13. We do not knowingly collect personal data from children under the age of 13.</p>
-
-  <h2>Security</h2>
-  <p>We take reasonable measures to protect your personal data from unauthorized access, disclosure, alteration, or destruction. However, no website or internet transmission is completely secure, and we cannot guarantee the security of your personal data.</p>
-
-  <h2>User Rights</h2>
-  <p>You have the right to access, rectify, erase, or object to the processing of your personal data. You may exercise these rights by contacting us at <a href="mailto:info@activeketo.com">info@activeketo.com</a>. We will respond to your request within a reasonable time frame.</p>
-
-  <h2>Changes to the Privacy Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We encourage you to review this Privacy Policy periodically for any changes.</p>
-
-  <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at <a href="mailto:info@activeketo.com">info@activeketo.com</a>.</p>
-  </div>
-
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="inner-hero-text">
+                <h1 class="title">Get in touch</h1>
+                <p>
+                  Create custom landing pages with Omega that converts more visitors
+                  than any website.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </main>
-      <!-- Footer section -->
+      </div>
+      <div class="omga-01__contact-section pt--40 pb--40 pt-md--120 pb-md--120">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2>We are always open 24/7 for you.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-xl-5 offset-xl-1 order-lg-2">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-12">
+                  <div class="contact-widget-block mb--55">
+                    <h3 class="title">Call us</h3>
+                    <p>+1-492-4918-395</p>
+                    <p>+14-394-409-591</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-12">
+                  <div class="contact-widget-block mb--55">
+                    <h3 class="title">Email us</h3>
+                    <p>info@mail.com</p>
+                    <p>support@mail.com</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-12">
+                  <div class="contact-widget-block mb--55">
+                    <h3 class="title">Call us</h3>
+                    <p>34 Madison Street,</p>
+                    <p>NY, USA 10005</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="omega-contact-form" id="#form-messages">
+                <form action="./plugins/php/mailer.php">
+                  <input type="text" class="form-control" placeholder="Your name" id="name" />
+                  <input type="text" class="form-control" placeholder="Email address" id="email" />
+                  <input type="text" class="form-control" placeholder="Subject" id="submit" />
+                  <textarea placeholder="Write your message" name="message" class="form-control" id="message"></textarea>
+                  <button class="btn btn--primary hvr-bounce-to-left">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Footer section -->
       <div class="footer-section footer-1">
         <div class="container">
@@ -404,8 +425,8 @@
               <div class="col-sm-6 text-sm-right text-center">
                 <ul class="social-icons">
                   <li><a href=""><i class="icon icon-logo-twitter"></i></a></li>
-                  <li><a href=""><i class="icon icon-logo-linkedin"></i></a></li>
-                  <li><a href=""><i class="icon icon-logo-facebook"></i></a></li>
+                  <li><a href=""><i class="icon icon-logo-dribbble"></i></a></li>
+                  <li><a href=""><i class="icon  icon-logo-instagram"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -423,6 +444,7 @@
   <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
   <script src="plugins/aos/aos.min.js"></script>
   <script src="plugins/slick/slick.min.js"></script>
+  <script src="./plugins/php/ajax_contact.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
 </body>
