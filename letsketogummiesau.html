@@ -54,7 +54,7 @@
   const formattedName = fileName.replace(/([A-Z])/g, ' $1').trim();
   const triggerName = formattedName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-  fetch("https://cloudcore.one/offers.json")
+  fetch("offers.json")
     .then((response) => response.json())
     .then((data) => {
       const selectedOffer = data.find((offer) => {
