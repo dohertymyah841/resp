@@ -54,14 +54,18 @@
   const formattedName = fileName.replace(/([A-Z])/g, ' $1').trim();
   const triggerName = formattedName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-  fetch("offers.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const selectedOffer = data.find((offer) => {
-        const isOffer = offer.filename === formattedName;
-        const isAdditionalPage = offer.additional_pages.includes(formattedName);
-        return isOffer || isAdditionalPage;
-      });
+  const data = [
+    {
+      "filename": "letsketogummiesau",
+      "title": "Lets Keto Gummies",
+      "image": "assets/products/letsketo.png",
+      "affiliateLink": "https://www.fasttrack03.com/M5RJFTJ8/23H6G8KS/?sub1=",
+      "geos": ["Australia", "New Zealand", "South Africa"]
+    }
+  ];
+
+  // rest of the code remains the same
+
 
       if (selectedOffer) {
         offerName.textContent = `${selectedOffer.title}™`;
@@ -133,7 +137,7 @@ countries.forEach((country) => {
         addCountry();
 
       } else {
-        console.error("Offer not found in offers.json");
+        console.error("Offer not found in data.json");
       }
     });
 </script>
